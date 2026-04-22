@@ -1,0 +1,27 @@
+:root{
+  --white: #FFFFFF;
+  --color-indigo-700: #4338CA;
+  --color-indigo-600: #4F46E5;
+  --color-indigo-500: #6366F1;
+  --color-indigo-50: #EEF2FF;
+  --color-neutral-900: #171717;
+  --color-neutral-600: #525252;
+  --color-gradient-bg: #F9FAFB;
+  --color-gradient-border: #D2D6DB;
+}
+.text-lgs{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 3.75rem;
+}
