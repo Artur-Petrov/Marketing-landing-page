@@ -8,6 +8,9 @@
   --color-neutral-600: #525252;
   --color-gradient-bg: #F9FAFB;
   --color-gradient-border: #D2D6DB;
+
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
 }
 .text-lgs{
   font-size: 1rem;
