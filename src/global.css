@@ -9,6 +9,9 @@
   --color-gradient-bg: #F9FAFB;
   --color-gradient-border: #D2D6DB;
 
+  --color-button-hover-pr: #3730A3;
+  --color-button-hover-sec: #FAFAFA;
+
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
 }
