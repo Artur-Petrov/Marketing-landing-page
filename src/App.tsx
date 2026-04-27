@@ -1,27 +1,14 @@
-import Button from "./components/uiKit/button/Button.tsx";
+import Input from "./components/uiKit/input/Input.tsx";
+import QuestionIcon from "./components/uiKit/svgIcons/QuestionIcon.tsx";
 
 function App() {
 
   return (
     <>
-      <Button className={"text-lg"} btnType={"primary"}>
-        show more
-      </Button>
-      <Button className={"text-lg"} btnType={"secondary"}>
-        show more
-      </Button>
-        <Button className={"text-lg"} btnType={"primary"}>
-            show more
-        </Button>
-        <Button className={"text-lg"} btnType={"secondary"}>
-            show more
-        </Button>
-        <Button className={"text-lg"} btnType={"primary"} disabled={true}>
-            show more
-        </Button>
-        <Button className={"text-lg"} btnType={"secondary"} disabled={true}>
-            show more
-        </Button>
+      <Input label={"Email"} placeholder={"name@email.com"} hint={"This is a hint text."} icon={<QuestionIcon/>} className={'text-lg'}/>
+      <Input label={"Email"} placeholder={"name@email.com"} hint={"This is an error message."}/>
+      <Input label={"Email"} placeholder={"name@email.com"} error={"This is an error message."} icon={<QuestionIcon/>}/>
+      <Input label={"Email"} disabled={true} placeholder={"name@email.com"} hint={"This is an error message."} icon={<QuestionIcon/>}/>
     </>
   )
 }

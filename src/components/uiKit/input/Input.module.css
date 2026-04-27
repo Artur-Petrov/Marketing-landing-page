@@ -1,0 +1,70 @@
+.input_container{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+.label{
+    color: #404040;
+}
+.input_wrapper{
+    display: flex;
+    align-items: center;
+    background-color: #FAFAFA;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+.input_wrapper:focus-within{
+    background-color: var(--white);
+    outline: none;
+    box-shadow:
+            0 0 0 2px rgba(99, 102, 241, 0.5);
+
+}
+.input_error{
+    border-color: #DC2626;
+}
+.input_error:focus-within{
+    border-color: #DC2626;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+.input_error .input_icon{
+    color: #DC2626;
+}
+
+.input_disabled{
+    background-color: #F5F5F5;
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+.input_disabled .input{
+    cursor: not-allowed;
+}
+.input{
+    flex-grow: 1;
+    padding: 10px 14px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--color-neutral-900);
+}
+.input::placeholder{
+    color: #404040;
+}
+.input_icon{
+    color: #A3A3A3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 14px;
+}
+.input_hint{
+    font-size: 13px;
+    color: #737373;
+}
+.input_error_text{
+    font-size: 13px;
+    color: #DC2626;
+}
