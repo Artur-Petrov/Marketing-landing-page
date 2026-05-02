@@ -1,0 +1,16 @@
+.toggle_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.toggle_button{
+
+}
+.active_toggle{
+    padding: 10px 38px;
+    box-shadow:
+            0px 1px 3px 0px rgba(0, 0, 0, 0.10),
+            0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+    border: 0.5px solid #E5E5E5;
+}
