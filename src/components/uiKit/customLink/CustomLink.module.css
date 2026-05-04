@@ -1,0 +1,17 @@
+.link{
+    color: #525252;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border-radius: 4px;
+}
+.disabled{
+    color: #A3A3A3;
+    cursor: not-allowed;
+}
+.link:not(.disabled):hover{
+    color: var(--color-neutral-900);
+}
+.link:not(.disabled):focus{
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+    outline: none;
+}

@@ -18,7 +18,7 @@
     box-shadow:
             0px 1px 3px 0px rgba(0, 0, 0, 0.10),
             0px 1px 2px 0px rgba(0, 0, 0, 0.06);
-    border: 0.5px solid #E5E5E5;
+    border: 1px solid #E5E5E5;
     color: var(--color-neutral-900);
 }
 .active_toggle:hover{

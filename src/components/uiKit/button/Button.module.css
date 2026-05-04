@@ -19,8 +19,7 @@
 .primary:focus-visible{
     background-color: var(--color-button-hover-pr);
     outline: none;
-    box-shadow:
-            0 0 0 2px rgba(99, 102, 241, 0.5);
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);;
 }
 
 .secondary {
@@ -44,7 +43,7 @@
     background-color: var(--color-button-hover-sec);
     outline: none;
     box-shadow:
-            0 0 0 2px rgba(99, 102, 241, 0.4);
+            0 0 0 2px rgba(99, 102, 241, 0.2);
 }
 .btn:disabled{
     color: rgba(82, 82, 82, 0.5);
