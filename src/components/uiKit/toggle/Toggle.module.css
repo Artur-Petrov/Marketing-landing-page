@@ -1,16 +1,29 @@
 .toggle_container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
+    gap: 32px;
 }
 .toggle_button{
-
+    border-radius: 4px;
+    padding: 10px 38px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+    color: #525252;
 }
 .active_toggle{
-    padding: 10px 38px;
     box-shadow:
             0px 1px 3px 0px rgba(0, 0, 0, 0.10),
             0px 1px 2px 0px rgba(0, 0, 0, 0.06);
     border: 0.5px solid #E5E5E5;
+    color: var(--color-neutral-900);
+}
+.active_toggle:hover{
+    background-color: #FAFAFA;
+    box-shadow:
+            0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+            0px 0px 1px 0px rgba(0, 0, 0, 0.04);
 }
