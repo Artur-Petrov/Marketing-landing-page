@@ -1,7 +1,8 @@
-import type {AnchorHTMLAttributes, FC} from "react";
+import type {FC} from "react";
 import styles from './CustomLink.module.css'
+import {Link, type LinkProps} from "react-router-dom";
 
-interface CustomLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+interface CustomLinkProps extends LinkProps {
     disabled?: boolean;
 }
 
@@ -9,19 +10,20 @@ const CustomLink: FC<CustomLinkProps> = ({
                                              children,
                                              disabled,
                                              className = '',
+                                             to,
                                              ...rest
                                          }) => {
 
-    if (disabled){
+    if (disabled) {
         return (
             <span className={`${styles.link} ${styles.disabled} ${className}`}>{children}</span>
         )
     }
 
     return (
-        <a className={`${styles.link} ${className}`} {...rest}>
+        <Link to={to} className={`${styles.link} ${className}`} {...rest}>
             {children}
-        </a>
+        </Link>
     );
 };
 
