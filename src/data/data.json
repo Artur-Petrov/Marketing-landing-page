@@ -1,0 +1,19 @@
+{
+  "header": {
+    "navLinks": [
+      { "name": "Home", "path": "/home" },
+      { "name": "Features", "path": "/features" },
+      { "name": "Pricing", "path": "/pricing" },
+      { "name": "About us", "path": "/about" },
+      { "name": "Contact", "path": "/contact" }
+    ]
+  },
+  "hero": {
+    "title": "Well crafted abstract gradient",
+    "desc": "High quality abstract images for your projects, wallpaper and presentations.",
+    "buttons": {
+      "primary": "Learn More",
+      "secondary": "See Pricing"
+    }
+  }
+}

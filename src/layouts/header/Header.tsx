@@ -2,6 +2,7 @@ import {useState} from "react";
 import styles from './Header.module.css'
 import IconButton from "../../components/uiKit/iconButton/IconButton.tsx";
 import CustomLink from "../../components/uiKit/customLink/CustomLink.tsx";
+import data from '../../data/data.json'
 
 const Header = () => {
 
@@ -41,11 +42,9 @@ const Header = () => {
 
 
             <nav className={`${styles.nav} ${openMenu ? styles.nav_active: ''}`}>
-                <CustomLink to={'/home'} onClick={menuHandler}>Home</CustomLink>
-                <CustomLink to={'/features'} onClick={menuHandler}>Features</CustomLink>
-                <CustomLink to={'/pricing'} onClick={menuHandler}>Pricing</CustomLink>
-                <CustomLink to={'/about'} onClick={menuHandler}>About us</CustomLink>
-                <CustomLink to={'/contact'} onClick={menuHandler}>Contact</CustomLink>
+                {data.header.navLinks.map((link, index) => (
+                    <CustomLink to={link.path} key={index} onClick={menuHandler}>{link.name}</CustomLink>
+                ))}
             </nav>
 
         </header>
