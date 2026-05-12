@@ -1,21 +1,42 @@
-.hero{
+.hero {
+    width: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+}
+
+.img_wrapper {
 
 }
-.wrapper{
 
+.title {
+    font-weight: 600;
 }
-.text_wrapper{
 
+.desc {
+    color: var(--color-neutral-600);
+    width: 100%;
 }
-.img_wrapper{
 
+.buttons_wrapper {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 48px;
+    width: 100%;
+    flex-wrap: wrap;
 }
-.title{
 
-}
-.desc{
-
-}
-.buttons_wrapper{
-
+.buttons_wrapper button {
+    flex: 1;
 }

@@ -14,7 +14,11 @@
 
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
-}
+  background: linear-gradient(
+          to right,
+          var(--color-gradient-bg),
+          var(--color-gradient-border)
+  );}
 .text-lgs{
   font-size: 1rem;
   line-height: 1.5rem;
@@ -30,4 +34,12 @@
 .text-6xl{
   font-size: 3.75rem;
   line-height: 3.75rem;
+}
+main{
+  background-color: var(--white);
+  padding: 48px 12px;
+  margin: 0 auto;
+  border-radius: 4px;
+  max-width: 1408px;
+  width: calc(100% - 32px);
 }
