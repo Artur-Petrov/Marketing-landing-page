@@ -1,6 +1,7 @@
 import styles from './Hero.module.css'
 import data from '../../data/data.json'
 import Button from "../uiKit/button/Button.tsx";
+import HeroImg from '../../assets/svg/Hero_image.png'
 
 const Hero = () => {
     return (
@@ -14,13 +15,13 @@ const Hero = () => {
                         {data.hero.desc}
                     </p>
                     <div className={styles.buttons_wrapper}>
-                        <Button>{data.hero.buttons.primary}</Button>
-                        <Button>{data.hero.buttons.secondary}</Button>
+                        <Button btnType={"secondary"}>{data.hero.buttons.primary}</Button>
+                        <Button btnType={"primary"}>{data.hero.buttons.secondary}</Button>
                     </div>
                 </div>
 
                 <div className={styles.img_wrapper}>
-                    <img src={}/>
+                    <img src={HeroImg} alt="Abstract shapes"/>
                 </div>
 
             </div>

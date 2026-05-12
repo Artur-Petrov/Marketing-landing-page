@@ -1,29 +1,44 @@
-.toggle_container{
+.toggle_container {
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
     gap: 32px;
 }
-.toggle_button{
+
+.toggle_button {
     border-radius: 4px;
     padding: 10px 38px;
     background-color: transparent;
-    border: 1px solid transparent;
     cursor: pointer;
     transition: all ease-in-out 0.2s;
     color: #525252;
+    border: 1px solid transparent;
 }
-.active_toggle{
-    box-shadow:
-            0px 1px 3px 0px rgba(0, 0, 0, 0.10),
-            0px 1px 2px 0px rgba(0, 0, 0, 0.06);
-    border: 1px solid #E5E5E5;
+
+.active_toggle {
+    background-color: #fff;
+    border: none;
+    box-shadow: inset 0 0 0 0.5px #E5E5E5,
+    0px 1px 3px 0px rgba(0, 0, 0, 0.10),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.06);
     color: var(--color-neutral-900);
 }
-.active_toggle:hover{
+
+.active_toggle:hover {
     background-color: #FAFAFA;
     box-shadow:
-            0px 1px 2px 0px rgba(0, 0, 0, 0.08),
-            0px 0px 1px 0px rgba(0, 0, 0, 0.04);
+            inset 0 0 0 1px #E5E5E5,
+            0px 1px 3px 0px rgba(0, 0, 0, 0.10),
+            0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+.active_toggle:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.toggle_button:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
 }
