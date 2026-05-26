@@ -1,7 +1,7 @@
 import styles from './Hero.module.css'
-import data from '../../data/data.json'
-import Button from "../uiKit/button/Button.tsx";
-import HeroImg from '../../assets/svg/Hero_image.svg'
+import data from '../../../data/data.json'
+import Button from "../../uiKit/button/Button.tsx";
+import HeroImg from '../../../assets/svg/Hero_image.svg'
 
 const Hero = () => {
     return (
